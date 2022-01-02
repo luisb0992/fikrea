@@ -1,0 +1,15 @@
+/**
+ * session.scss
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicos Externos 
+ */
+
+.copy-guest-token {
+    margin-left: .5em;
+    font-size: 24px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.5;
+    }
+}

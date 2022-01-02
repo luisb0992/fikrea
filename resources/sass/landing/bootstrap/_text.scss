@@ -1,0 +1,15 @@
+/**
+ * Estilos específicos para los texto
+ *
+ * @author  ja
+ *
+ */
+
+ /**
+  * generación...
+  */
+@for $i from 0 to 10 {
+    .opacity-#{$i/10} {
+        opacity: $i/10 ;
+    }
+}

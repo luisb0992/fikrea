@@ -1,0 +1,32 @@
+/**
+ * upload.scss
+ *
+ * Subida de archivos del usuario para ser compartidos con otros 
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicos Externos 
+ */
+
+.file-uploading  {
+    table {
+
+        .text-shadow {
+            text-shadow: 2px 2px 5px #444;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        .file-uploads {
+            font: {
+                size: 150%;
+            }
+        }
+    }
+
+}
+
+#app > div:nth-child(10) > div > div:nth-child(1) > span > label {
+    cursor: pointer;
+}

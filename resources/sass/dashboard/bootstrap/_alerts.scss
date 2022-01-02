@@ -1,0 +1,22 @@
+/**
+ * Alertas 
+ */
+.alert {
+
+    >.icon {
+        font: {
+            size: 36px;
+        }
+    }
+
+    >p {
+        position: relative;
+        top: 4px;
+        left: 12px;
+        font-size: 20px;
+
+        font: {
+            weight: 1000;
+        }
+    }
+}

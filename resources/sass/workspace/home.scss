@@ -1,0 +1,272 @@
+/**
+ * Página principal del Workspace o espacio del usuario firmante
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicios Externos
+ */
+
+.block {
+    &.list-group {
+
+        list-style-type: none; /* Remove bullets */
+        
+        width: 100%;
+        color: rgb(43, 96, 117);
+        font: {
+            size: 24px;
+            weight: 1000;
+        }
+
+        .check {
+            cursor: not-allowed;
+        }
+
+        >.list-group-item-request {
+            margin: 10px 10%;
+            width: 90%;
+            padding: 12px 20px !important;
+            background: white !important;
+
+            .small {
+                font: {
+                    size: 16px;
+                }
+            }
+
+            >.text {
+                position: relative;
+                bottom: 8px;
+                margin-left: 10px;
+            }
+
+            .ml-5 {
+                margin-left: 3.7rem !important;
+            }
+        }
+
+        .list-group-item {
+            margin: 10px 10%;
+            width: 50%;
+       
+            .small {
+                font: {
+                    size: 16px;
+                }
+            }
+
+            >.text {
+                position: relative;
+                bottom: 8px;
+                margin-left: 10px;
+            }
+
+            .ml-5 {
+                margin-left: 3.7rem !important;
+
+                @media(max-width:575px) {
+                    margin-left: 1.5rem !important;
+                }
+            }
+
+            @media(max-width:768px) {
+                margin: 10px 10%;
+                width: 88%;
+            }
+        }
+    }
+}
+
+.creator-info {
+    position: relative;
+    width: 100%;
+    background-color:  #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 1rem;
+    max-width: 480px;
+
+    .user-image {
+        float: left;
+        padding: 0 1rem;
+        height: 140px;  
+        >img {
+            width: 120px;
+            box-shadow: 1px 1px 2px grey;
+            border-radius: 8px;
+
+            @media(max-width: 480px) {
+                width: 60px;
+            }
+
+            @media(max-width: 320px) {
+                display: none;
+            }
+        }
+    }
+
+    .ml-1 {
+        margin-left: 12rem !important;
+
+        @media(max-width: 480px) {
+            margin-left: 2rem !important;
+        }
+
+    }
+}
+
+.progress-info {
+    clear: both;
+    width: 100%;
+    background-color:  #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 1rem;
+    max-width: 480px;
+
+    /* Document progress bar */
+    /* CROSS BROWSER SELECTOR */
+    .document-progress {
+        /* RESETS */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 1px solid;
+
+        width: 100%;
+        height: 15px;
+        border-radius: 20px;
+        background-color: #a218d0;
+        color: #a218d0;;
+    }
+ 
+    /* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+    .document-progress::-webkit-progress-bar {
+          background-color: #fff;
+          border-radius: 20px;
+    }
+
+    .document-progress::-webkit-progress-value {
+        background-image:
+            -webkit-linear-gradient(45deg, transparent 40%, rgba(0, 0, 0, .1) 40%, rgba(0, 0, 0, .1) 70%, transparent 70%),
+            -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)),
+            -webkit-linear-gradient(left, #78abe6, #6618cc);
+        border-radius: 20px;
+    }
+ 
+    /* MOZILLA FIREFOX */
+    .document-progress::-moz-progress-bar {
+        background-image:
+            -webkit-linear-gradient(45deg, transparent 40%, rgba(0, 0, 0, .1) 40%, rgba(0, 0, 0, .1) 70%, transparent 70%),
+            -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)),
+            -webkit-linear-gradient(left, #78abe6, #6618cc);
+        border-radius: 20px;
+    }
+ 
+    /* MICROSOFT EDGE & IE */
+    .document-progress::-ms-fill {
+          border-radius: 18px;
+          background: repeating-linear-gradient(45deg,
+          #78abe6,
+          #78abe6 10px,
+          #6618cc 10px,
+          #6618cc 20px);
+    }
+    /* /CROSS BROWSER SELECTOR */
+
+    /* Signer progress bar */
+    /* CROSS BROWSER SELECTOR */
+    .signer-progress {
+        /* RESETS */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 1px solid;
+
+        width: 100%;
+        height: 10px;
+        border-radius: 20px;
+        background-color: #0ea02f;
+        color: #0ea02f;
+    }
+ 
+    /* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+    .signer-progress::-webkit-progress-bar {
+          background-color: #fff;
+          border-radius: 20px;
+    }
+
+    .signer-progress::-webkit-progress-value {
+        background-image:
+            -webkit-linear-gradient(45deg, transparent 40%, rgba(0, 0, 0, .1) 40%, rgba(0, 0, 0, .1) 70%, transparent 70%),
+            -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)),
+            -webkit-linear-gradient(left,#6618cc, #09b642);
+        border-radius: 20px;
+    }
+ 
+    /* MOZILLA FIREFOX */
+    .signer-progress::-moz-progress-bar {
+        background-image:
+            -moz-linear-gradient(45deg, transparent 33%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.1) 70%, transparent 70%),
+            -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+            -moz-linear-gradient(left, #6618cc, #09b642);
+        border-radius: 20px;
+    }
+ 
+    /* MICROSOFT EDGE & IE */
+    .signer-progress::-ms-fill {
+          border-radius: 18px;
+          background: repeating-linear-gradient(45deg,
+          #6618cc,
+          #6618cc 10px,
+          #09b642 10px,
+          #09b642 20px);
+    }
+    /* /CROSS BROWSER SELECTOR */
+
+
+    >.text {
+        position: relative;
+        top: -2px;
+        margin-right: 5px;
+    }
+}
+
+.img-fluid {
+    position: relative;
+    left: 0;
+    max-width: 120px;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.btn-workstatus {
+    font-size: .70rem;
+    float: right;
+    border: 2px solid black !important;
+}
+
+.check-1-2{
+    transform: scale(1.2) !important;
+}
+
+.check-1-4{
+    transform: scale(1.4) !important;
+}
+
+.check-1-6{
+    transform: scale(1.6) !important;
+}
+
+.check-1-8{
+    transform: scale(1.8) !important;
+}
+
+.check-2-0{
+    transform: scale(2.0) !important;
+}
+
+
+
+
+
+

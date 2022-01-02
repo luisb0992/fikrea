@@ -1,0 +1,88 @@
+/**
+ * profile.scss
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicos Externos 
+ */
+
+/**
+* El botón (ojo) para mostrar y ocultar la contraseña
+*/
+.password-eye {
+    cursor: pointer;
+
+    &.show {
+        display: block;
+    }
+
+    &.hide {
+        display: none;
+    }
+}
+
+/**
+ * Barra de color que indica la fortaleza de la contraseña
+ */
+.po-password-strength-bar {
+    margin-top: 0 !important;
+}
+
+/**
+ * La previsualización de la imagen del perfil del usuario
+ */
+.profile-image {
+    max-width: 280px;
+    border: 1px dashed rgb(209, 199, 199);
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/**
+ * El texto del selector de la imagen del perfil
+ */
+#browser {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/**
+ * Modal de ayuda para el usuario invitado
+ */
+#help-for-guest-user {
+
+    img {
+        max-width: 100%;
+        width: auto;
+        height: 250px;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .alert {
+        word-break: break-all;    
+    }
+
+    .copy-guest-token {
+        margin-left: .5em;
+        font-size: 24px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .new-token {
+        width: 100%;
+        line-height: 2em;
+        padding: 5px;
+
+        &:hover {
+            border: none;
+            background-color: rgb(233, 233, 181);
+        }
+    }
+}

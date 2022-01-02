@@ -1,0 +1,104 @@
+// ---------------------------------------------------------
+// Botones de diferentes diseños utilizados en toda la app
+// ---------------------------------------------------------
+
+.btn-action-uncheck-all {
+    color: #000000;
+    background-color: #ef3e86;
+    border-color: #ef3e8f;
+    margin-right: 0.25rem !important;
+}
+
+.btn-action-edit {
+    color: #ffffff;
+    background-color: #4ed8c9;
+    border-color: #69f8c5;
+    margin-right: 0.25rem !important;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.btn-action-move {
+    color: #000000;
+    background-color: #fc6601;
+    border-color: #fc6605;
+    margin-right: 0.25rem !important;
+}
+
+.btn-action-download {
+    color: #000000;
+    background-color: #FFDD00;
+    border-color: #e9c700;
+    margin-right: 0.25rem !important;
+}
+
+.btn-action-sign {
+    color: #ffffff;
+    background-color: #00A4E4;
+    border-color: #0090cf;
+    margin-right: 0.25rem !important;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.btn-action-copy-url {
+    color: #ffffff;
+    background-color: #371777;
+    border-color: #200162;
+    margin-right: 0.25rem !important;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.btn-action-share {
+    color: #ffffff;
+    background-color: #2C9F45;
+    border-color: #138726;
+    margin-right: 0.25rem !important;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.btn-action-remove {
+    color: #ffffff;
+    background-color: #ff0000;
+    border-color: #e90000;
+    margin-right: 0.25rem !important;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.btn-action-details {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #5d676f;
+    margin-right: 0.25rem !important;
+}
+
+.btn-action-folder {
+    color: #000000;
+    background-color: #ffc107;
+    border-color: #CF8D2E;
+    margin-right: 0.25rem !important;
+}
+
+.btn-action-upload {
+    color: #ffffff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    margin-right: 0.25rem !important;
+
+    &:hover {
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,182 @@
+/**
+ * Firma del documento en el espacio de trabajo del usuario firmante
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicios Externos
+ */
+
+#pagesPreview {
+    list-style-type: none;
+    /* overflow-y: scroll; */
+    overflow-y: hide;
+    max-height: 330px;
+    /* background-color: rgb(197 236 232 / 88%); */
+    
+    .page {
+        display: inline-block;
+        /* margin: 3px; */
+        cursor: pointer;
+
+        &.template {
+            display: none;
+        }
+        
+        canvas {
+            box-shadow: 1px 2px 2px black;
+            width: 140px;
+            height: 240px;
+            border: 1px solid rebeccapurple;
+
+            &:hover {
+                opacity: 0.7 !important;
+            }
+        }
+
+        >.pagination {
+            text-align: center;
+        }
+    }
+}
+
+#pages {
+    list-style-type: none;
+    
+    .page {
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+
+        &.template {
+            display: none;
+        }
+        
+        canvas {
+            box-shadow: 1px 2px 2px black;
+            width: 240px;
+            height: 340px;
+            
+
+            &:hover {
+                opacity: 0.6 !important;
+            }
+        }
+
+        >.pagination {
+            text-align: center;
+        }
+    }
+}
+
+/**
+ * El número de página
+ */
+.page-number {
+    display: inline-block;
+    margin: 5px auto;
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+    color: black;
+    background: rgb(255, 255, 255);
+    font: {
+        size: 24px;
+    }
+    border: 3px solid black;
+
+    &.remaining {
+        font: {
+            weight: 600;
+        }
+        background: rgb(241, 226, 10);
+        color: #444;
+        border: 3px solid white;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.slider {
+    max-width: 98% !important;
+    text-align: center;
+    overflow: hidden;
+    /* background-color: rgb(197 236 232 / 88%); */
+    list-style-type: none;
+    padding: 10px 10px 0px 10px;
+}
+
+.slides {
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  
+    /*
+        scroll-snap-points-x: repeat(300px);
+        scroll-snap-type: mandatory;
+    */
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: #1aa999;  /* color fikrea verde-azul */
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    /*
+        width: 300px;
+        height: 300px;
+    */
+    margin-right: 10px;
+    border-radius: 10px;
+    /* background: #eee; */
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 100px; */
+}
+
+.slides .pre-loading-img {
+    background-color: white;
+
+    width: 140px;
+    height: 240px;
+    padding: 70px 0 0 0;
+    border: 1px dashed orangered;
+
+    & > img {
+        opacity: 0.1;
+    }
+}
+
+.slides > div:target {
+/*   transform: scale(0.8); */
+}
+
+.slider > a:active {
+    top: 1px;
+}
+.slider > a:focus {
+    background: #000;
+}

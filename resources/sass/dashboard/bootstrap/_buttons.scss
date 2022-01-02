@@ -1,0 +1,22 @@
+/**
+ * Botones
+ */
+.btn {
+    &.no-events {
+        pointer-events: none;
+    }   
+}
+
+/**
+ * Botones de un grupo a tamaños pequeños
+ */
+@media(max-width:480px) {
+    .input-group  {
+        .btn-lg {
+            margin-top: .25rem;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            width: 100% !important;
+        }
+    }
+}

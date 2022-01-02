@@ -1,0 +1,35 @@
+/**
+ * Página para compartir un archivo con otros usuarios
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicios Externos
+ */
+
+/**
+ * Margen superior de la página
+ */
+.mtop {
+    margin-top: 120px;
+}
+
+/**
+ * El botón de descarga del archivo
+ */
+.btn {
+    max-width: 320px;
+
+    .btn-block {
+        display: block;
+    }
+
+    .btn-filename {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;  
+    }
+}
+
+.w200 {
+    max-width: 200px;
+}

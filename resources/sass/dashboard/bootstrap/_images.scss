@@ -1,0 +1,28 @@
+/**
+ * Imágenes
+ */
+.logo-src {
+    height: 100%  !important;
+    width: 100% !important;
+    background: none !important;
+}
+
+/**
+ * Tamaño máximo de imágenes en miniatura en una tabla o lista
+ */
+table, li {
+    .thumb {
+        max-width: 120px;
+    }
+}
+
+/**
+ * Ancho máximo de imágenes
+ */
+img {
+    // max: 300 px
+    &.max-width-300 {
+        width: 100%;
+        max-width: 300px;
+    }
+}

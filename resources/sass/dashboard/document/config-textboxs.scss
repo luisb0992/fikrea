@@ -1,0 +1,175 @@
+/**
+ * Configuración del documento
+ *
+ * @author rosellpp <rpupopolanco@gmail.com>
+ * @copyright 2021 Retail Servicios Externos
+ */
+
+/*
+ * Barras de desplazamiento de la página
+ * personalizando colores a fikrea
+ */
+
+::-webkit-scrollbar{
+width: 10px;
+    background-color: #1aa999;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #1aa999;
+    border-radius: 8px !important;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 8px !important;
+    background-color: #cea3e8; 
+    background-image: -webkit-linear-gradient(90deg,rgba(255, 255, 255, .2) 25%,transparent 
+    25%,transparent 50%,rgba(255, 255, 255, .2) 50%,rgba(255, 255, 255, .2) 75%,transparent 75%,
+    transparent)
+}
+
+/*
+ * Div donde se previsualiza el documento
+ */
+.visor {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+/*
+ * Cajas de textos predefinidas
+ */
+.box {
+    border: 3px solid #bc61de8c;
+    background-color: #8de5dc52;
+    border-radius: 0.5em;
+    padding: 10px;
+    cursor: move;
+    margin-top: 1px;
+    width: 185px;
+    min-width: 185px;
+
+    /* Para el correcto funcionamiento de interact en navegadors móviles*/
+    /* @see https://github.com/taye/interact.js/issues/595 */
+    -ms-touch-action: none;
+    touch-action: none;
+    user-select: none;
+}
+
+.box.over {
+    border: 3px dotted #9b06cd;
+}
+
+/**
+ * El marcador de la caja de texto
+ *
+ * Cuando se hace click en el documento se abre un marcador para posicionar la caja de texto
+ * que debe completar un usuario firmante o el propio creador del documento
+ */
+.box-placeholder {
+    opacity: 0.8;
+    width: 185px;
+    /*min-height: 100px;*/
+    /*max-height: auto;*/
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1000;
+    box-shadow: 1px 2px 2px #5f5d5d;
+
+    /* Para el correcto funcionamiento de interact en navegadors móviles*/
+    -ms-touch-action: none;
+    touch-action: none;
+    user-select: none;
+
+    &.template {
+        display: none;
+    }
+     
+    .box-placeholder-header {
+        text-align: right;
+        font: {
+            weight: 1000;
+        }
+        border-bottom: 1px solid white;
+    
+        .box-placeholder-id {
+            float: left;
+            position: relative;
+            top: 2px;
+            left: 5px;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .clear-box-placeholder {
+            margin-right: -10px;
+            border: none;
+            outline: none;
+            color: white;
+            background: transparent;
+            font: {
+                size: 18px;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .remove-box-placeholder {
+            margin-right: 2px;
+            border: none;
+            outline: none;
+            color: white;
+            background: transparent;
+            font: {
+                size: 18px;
+            }
+        }
+    }
+
+    .box-placeholder-body {
+        margin: 5px;
+        text-shadow: 1px 1px 2px black;
+        font: {
+            weight: 1000;
+        }
+
+        .box {
+            height: 40px;
+            width:  100%;
+            cursor: edit;
+        }
+
+        .signer-name {
+            position: relative;
+            bottom: 0;
+        }
+
+        [type='text'] {
+            width: 100%;
+        }
+
+        [type='checkbox'] {
+            transform: scale(1.5) !important;
+            margin-top: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        label {
+            float: right;
+        }
+
+        select {
+            padding: 1px 30px 1px 1px !important;
+            background-position-y: 0px !important;
+            color: black !important;
+            width: 100%;
+        }
+
+    }
+    
+}

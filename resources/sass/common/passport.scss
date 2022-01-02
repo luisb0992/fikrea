@@ -1,0 +1,128 @@
+/**
+ * Validación mediante un documento acreditativo de identidad como el pasaporte
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicios Externos
+ */
+
+ /**
+  * Estilo de elemento tarjeta (card)
+  */
+ .card {
+    
+    /**
+     * Tarjetas de altura fija
+     */
+    &.card-h400 {
+        height: 400px;
+    }
+
+    /**
+     * Cuerpo de la tarjeta
+     */
+    .card-body {
+        width: 100%;
+        height: 90%;
+        margin: auto auto;
+
+        .no-passport {
+            max-height: 300px;
+            object-fit: contain;
+            width: 100%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .passport {
+            max-height: 300px;
+            object-fit: contain;
+            width: 100%;
+            opacity: 0.6;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+
+        .user-image {
+            width: 80%;
+            text-align: center;
+            opacity: 0.6;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+    }
+
+    /**
+     * Pié de la tarjeta
+     */
+    .card-foot {
+        height: 10%;
+        margin: 10px;
+        text-align: right;
+
+        .btn  {
+            padding-bottom: 5px;
+        }
+    }
+}
+
+/**
+ * Estilos para la tabla de archivos
+ */
+#files-table {
+    .passport-thumb {
+        width: 100%;
+        max-width: 100px;
+    }
+}
+
+.icon-image {
+    height: 50px;
+    opacity: 0.9;
+}
+
+.webcam {
+    position: relative;
+
+    #webcam {
+        width: 100%;
+    }
+
+    #webcam1 {
+        width: 100%;
+    }
+
+    #webcam2 {
+        width: 100%;
+    }
+
+    #overlay {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #overlay1 {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #overlay2 {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+

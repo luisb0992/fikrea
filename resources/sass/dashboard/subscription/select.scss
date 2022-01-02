@@ -1,0 +1,120 @@
+/**
+ * Selección de la subscripción
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Reatil Servicios Externos
+ */
+
+ /**
+  * Estilo de cada elemento en el que se visualiza cada plan de susbcripción
+  */
+.plan {
+    overflow: hidden;
+    padding-top: 10px;
+
+    .heading {
+        color: rgb(71, 25, 25);
+        margin: 1em 0;
+    }
+
+    /**
+     * El lazo que señala el plan que se tiene actualmente
+     */
+    .ribbon {
+        position: absolute;
+        width: 275;
+        height: 175px;
+        left: -50px;
+        top: 20px;
+        transform: rotate(-45deg);
+        overflow: hidden;
+        opacity: 0.7;
+
+        span {
+            display: block;
+            width: 300px;
+            padding: 15px 0;
+            background-color: #a034b3;
+            box-shadow: 0 5px 10px rgba(0,0,0,.1);
+            color: #fff;
+            text-shadow: 0 1px 1px rgba(0,0,0,.2);
+            text-transform: uppercase;
+            text-align: center;
+        }    
+    }
+
+    /**
+     * Los Precios
+     */
+    .price {
+        display: inline-block;
+        margin-top: 2em;
+        border-bottom: 2px solid rgb(56, 52, 52);
+        font: {
+            size: 20px;
+        }
+        
+        sup {
+            font: {
+                weight: 1000;
+            }
+        }
+
+        .number {
+            color: red;
+        }
+    }
+    
+    .heading-2 {
+        margin: 1em;
+    } 
+
+    /**
+     * La lista de características particulares del plan
+     */
+    ul.pricing-text {
+        list-style-type: none;
+    }
+
+    /**
+     * El botón de selección del plan
+     */
+    .btn {
+        &.active {
+            background-color: #2e2929 !important;
+            border: none !important;
+        }
+    }
+}
+
+/**
+ * Estilo del botón para Pagar el plan de subscripción elegido
+ */
+.btn-select {
+    height: 64px;
+    font: {
+        size: 32px;
+    }
+}
+
+/**
+ * Estilo del botón de contacto
+ */
+.btn-contact {
+    position: fixed;
+    top: 72px;
+    right: 28px;
+    border-radius: 64px;
+    box-shadow: 2px 2px 10px black;;
+    .fas {
+        padding: 6px 4px;
+        width: 38px;
+        height: 48px;    
+    }
+}
+
+.toast {
+    position: fixed;
+    top: 128px;
+    right: 20px;
+}

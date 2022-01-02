@@ -1,0 +1,71 @@
+/**
+ * Formularios
+ */
+ form {
+    label {
+        color: rgb(48, 125, 161);
+
+        font: {
+            weight: 1000;
+        }
+    }
+
+    .custom-file-label::after {
+        content: '';
+    }
+
+    input[type="text"]:focus {
+        background: white;
+    }
+
+    .custom-file-label:after {
+        content: '\1F4C2' !important;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    /**
+    * Pone un asterisco a los campos label de un formulario
+    * marcados como requeridos u obligatorios
+    */
+    label {
+
+        &.required {
+            &::after {
+                margin-left: 0.2em;
+                content: '*';
+                color: rgb(153, 43, 43);
+            }
+        }
+    }
+}
+
+.scale-1-2 {
+	transform: scale(1.2) !important;
+}
+
+.scale-1-4 {
+	transform: scale(1.4) !important;
+}
+
+.scale-1-6 {
+	transform: scale(1.6) !important;
+}
+
+.scale-1-8 {
+	transform: scale(1.8) !important;
+}
+
+.scale-2-0 {
+	transform: scale(2) !important;
+}
+
+.scale-2-2 {
+	transform: scale(2) !important;
+}
+
+.scale-2-5 {
+	transform: scale(2.5) !important;
+}

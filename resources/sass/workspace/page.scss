@@ -1,0 +1,53 @@
+/**
+ * Firma de una página del documento en el espacio de trabajo del usuario firmante
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicios Externos
+ */
+
+/**
+ * Paginación
+ */
+.pagination {
+    position:relative;
+    top: 0;
+    left: -5px;
+    margin-bottom: 10px;
+}
+
+/**
+ * El marcador de firma
+ * Donde se muestra la caja (canvas) para firmar
+ */
+.sign-placeholder {
+  
+    .sign-placeholder-header {
+        .clear-sign-placeholder {
+            margin-right: 5px;
+        }
+    }
+}
+
+/**
+ * La captura de pantalla del proceso de firma
+ */
+.screen-capture {
+
+    #video-screen {
+        width: 100%;
+        max-width: 400px;
+        max-height: 275px;
+        background: #242121;
+        
+        border: 2px solid orangered;
+        display: none;
+        position: fixed;
+        right: 15px;
+        bottom: 70px;
+        z-index: 1;
+    }
+
+    video {
+        max-width: 100%;
+    }
+}

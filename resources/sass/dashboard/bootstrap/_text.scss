@@ -1,0 +1,27 @@
+/**
+ * Textos
+ */
+.bold {
+    font: {
+        weight: 1000;
+    }
+}
+
+/**
+ * Alinea correctamente un texto con un icono de fontawesome de tamaño 2
+ */
+.fa-2x-text {
+    position: relative;
+    top: -6px;
+    margin-left: 5px;
+}
+
+/**
+ * Evitar que un contenido sea seleccionable
+ */
+.no-selection {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}

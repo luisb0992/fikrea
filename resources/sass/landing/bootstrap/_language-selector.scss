@@ -1,0 +1,28 @@
+/**
+ * Selector de idiomas
+ */
+ .language-selector {
+	list-style: none; 
+	columns: 2;
+}
+
+.language-flag {
+	width: 32px;
+	position: relative;
+	top: -3px;
+}
+
+.language-title {
+    position: relative;
+    top: -2px;
+	color: gray;
+
+	@media(min-width:992px) {
+		display: none;
+	}
+}
+
+.language-text {
+	position: relative;
+	top: -2px;
+}

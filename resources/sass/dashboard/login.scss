@@ -1,0 +1,70 @@
+/**
+ * Login
+ *
+ * @author <javi@gestoy.com>
+ * @copyright 2021 Retail Servicios Externos
+ */
+
+@import 'bootstrap/colors';
+
+/**
+ * Suprimir el espacio superior
+ */
+.fixed-header {
+
+    .app-main {
+        padding-top: 0;
+    }
+}
+
+.main  {
+
+    /**
+    * El botón (ojo) para mostrar y ocultar la contraseña
+    */
+    .password-eye {
+        cursor: pointer;
+
+        &.show {
+            display: block;
+        }
+
+        &.hide {
+            display: none;
+        }
+    }
+
+    /**
+     * Botones y textos con los colores delo logo de la aplicación
+     */
+    .btn-purple {
+        background-color : $purple;
+        border-color: $purple;
+        color:aliceblue;
+
+        &:hover {
+            background-color : $purple-variant;
+            border-color: $purple-variant;
+        }
+    }
+
+    .text-purple {
+        color : $purple;
+    }
+
+    .btn-turquoise {
+        background-color : $turquoise;
+        border-color: $turquoise;
+        color:#4a4646;
+
+        &:hover {
+            background-color : $turquoise-variant;
+            border-color: $turquoise-variant;
+        }
+    }
+
+    .text-turquoise {
+        color : $turquoise;
+    }
+
+}

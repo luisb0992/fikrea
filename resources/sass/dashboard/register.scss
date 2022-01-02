@@ -1,0 +1,33 @@
+/**
+ * Registro de Usuarios
+ *
+ * @author <javi@gestoy.com>
+ * @copyright 2021 Retail Servicios Externos
+ */
+
+@import 'bootstrap/colors';
+
+/**
+ * Suprimir el espacio superior
+ */
+.fixed-header {
+    
+    .app-main {
+        padding-top: 0;
+    }
+}
+
+/**
+* El botón (ojo) para mostrar y ocultar la contraseña
+*/
+.password-eye {
+    cursor: pointer;
+
+    &.show {
+        display: block;
+    }
+
+    &.hide {
+        display: none;
+    }
+}

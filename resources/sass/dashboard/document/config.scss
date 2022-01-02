@@ -1,0 +1,260 @@
+/**
+ * Configuración del documento
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicios Externos
+ */
+
+/**
+ * Colores diferentes para los contenedores de los firmantes
+ * Cada firmante se identificará con un color que hemos definido de manera arbitraria
+ */
+.color-0 { background-color: var(--pink);}
+.color-1 { background-color: var(--red);}
+.color-2 { background-color: var(--orange);}
+.color-3 { background-color: var(--green);}
+.color-4 { background-color: var(--teal);}
+.color-5 { background-color: var(--cyan);}
+.color-6 { background-color: var(--blue);}
+.color-7 { background-color: var(--indigo);}
+.color-8 { background-color: var(--purple);}
+.color-9 { background-color: var(--gray);}
+
+/**
+ * La barra de herramientas
+ *
+ * Es el componene que muestra los botones para cambiar de página, zoom, etc
+ */
+.toolbar {
+    .toolbar-item {
+        margin: 0.5em 0 0 0.5em;
+        background: white;
+        padding: 10px;
+        display: inline-block;
+      
+        font: {
+            size: 16px;
+        }
+
+        .btn {
+            border: 1px solid black;
+
+            &.active {
+                border: 1px solid black;
+            }
+        }
+
+        &.page {
+            input {
+                width: 4rem;
+            }
+        }
+
+        .separator {
+            margin: 0 .5rem;
+        }
+
+        &.scale {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
+    }
+}
+
+/**
+ * El documento
+ * 
+ * Es el componente que muestra una página del documento sobre el que se efectúa la firma
+ */
+.document { 
+    width: 98% !important;
+    /* background-color: red; */
+    /* overflow: scroll; */
+    margin: 0;
+    padding: 0;
+
+    /**
+     * El documento PDF
+     */
+
+    #pdf {
+        margin: 10px auto;
+        border: 1px dashed #9b06cd; /* color morado fikrea */
+
+        &.cursor-for-sign {
+            cursor: crosshair;
+        }
+    }
+
+    #document {
+        margin: 10px auto;
+        border: 1px dashed #9b06cd; /* color morado fikrea */
+
+        &.cursor-for-sign {
+            cursor: crosshair;
+        }
+    }
+}
+
+/**
+ * El spinner mientras se carga el archivo pdf
+ */
+.spinner-loading-pdf {
+    width:  5rem;
+    height: 5rem;
+    color: #9b06cd; /* Color morado fikrea */
+}
+
+/**
+ * El marcador de firma
+ *
+ * Cuando se hace click en el documento se abre un marcador para posicionar la firma
+ * que debe ejecutar un usuario firmante o el propio creador del documento
+ */
+.sign-placeholder {
+    opacity: 0.8;
+    width: 250px;
+    height: 150px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1000;
+    box-shadow: 1px 2px 2px #5f5d5d;
+
+    &.template {
+        display: none;
+    }
+     
+    .sign-placeholder-header {
+        text-align: right;
+        font: {
+            weight: 1000;
+        }
+        border-bottom: 1px solid white;
+    
+        .sign-placeholder-id {
+            float: left;
+            position: relative;
+            top: 2px;
+            left: 5px;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .move-sign-placeholder {
+            margin-right: -10px;
+            border: none;
+            outline: none;
+            color: white;
+            background: transparent;
+            font: {
+                size: 18px;
+            }
+        }
+
+        .clear-sign-placeholder {
+            margin-right: -10px;
+            border: none;
+            outline: none;
+            color: white;
+            background: transparent;
+            font: {
+                size: 18px;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .remove-sign-placeholder {
+            margin-right: 2px;
+            border: none;
+            outline: none;
+            color: white;
+            background: transparent;
+            font: {
+                size: 18px;
+            }
+        }
+    }
+
+    .sign-placeholder-body {
+        margin: 5px;
+        text-shadow: 1px 1px 2px black;
+        font: {
+            weight: 1000;
+        }
+        
+        .sign {
+            /* width: 240px; */
+            /* height: 80px; */
+            border: 2px dashed;
+
+            &:hover {
+                border: 2px dashed #9b06cd !important; /* morado fikrea */
+                /*
+                The first number is the x-coordinate, and the second number is the y-coordinate.
+                The example will set the hotspot to be the pixel at (4,12) from the top left (0,0)
+                */
+                cursor: url('/assets/css/workspace/cursor-sign.png') 0 28, auto;
+            }
+        }
+
+        .signer-name {
+            position: relative;
+            bottom: 0;
+        }
+    }
+}
+
+#cpad {
+    &:hover {
+        border: 2px dashed #9b06cd; /* morado fikrea */
+        /*
+        The first number is the x-coordinate, and the second number is the y-coordinate.
+        The example will set the hotspot to be the pixel at (4,12) from the top left (0,0)
+        */
+        cursor: url('/assets/css/workspace/cursor-sign.png') 0 28, auto;
+        
+    }
+}
+
+/**
+ * El contenedor de un sello estampado sobre un documento
+ *
+ * Cuando se posiciona un sello sobre el documento
+ */
+.stamp-placeholder {
+    position: absolute;
+    
+    &.template {
+        display: none;
+    }
+
+    .remove-stamp-placeholder {
+        position: relative;
+        left: -12px;
+        z-index: 1;
+
+        // Reposiciona el botón a escala x1
+        &.scale-1 {
+            bottom: 120px;
+        }  
+
+        // Reposiciona el botón a escala x2
+        &.scale-2 {
+            bottom: 240px;
+        }
+    }
+
+    .stamp {
+        display: inline-block;
+        position: relative;
+        left: -42px;
+        top: 0;
+        opacity: 0.5;
+    }
+}

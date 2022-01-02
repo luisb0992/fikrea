@@ -1,0 +1,40 @@
+.table-striped tbody tr.odd {
+    background-color: rgba(0, 0, 0, .05) !important;
+    word-break: break-word;
+    border-bottom: 1px dotted grey;
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr.odd + tr.child {
+    background-color: rgba(0, 0, 0, .05) !important;
+    word-break: break-word;
+    border-bottom: 1px dotted grey;
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr.even {
+    background-color: white !important;
+    word-break: break-word;
+    border-bottom: 1px dotted grey;
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr.even + tr.child {
+    background-color: white !important;
+    word-break: break-word;
+    border-bottom: 1px dotted grey;
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details > li {
+    border-bottom: 2px solid #efefef !important;
+    padding: 0.5em 0;
+}

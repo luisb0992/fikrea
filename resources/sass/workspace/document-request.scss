@@ -1,0 +1,36 @@
+/**
+ * Solicitud de documentos al usuario "firmante"
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicios Externos
+ */
+
+ .files-selector {
+
+    @media(max-width: 640px) {
+        #document {
+            display: block;
+            width: 100%;
+            margin: 0;
+        }
+
+        .datepicker {
+            width: 125px;
+        }
+    }
+
+    @media(max-width: 440px) {
+    
+        .datepicker {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+.btn-fikrea {
+    background-color: #9b06cd !important;
+    color: white;
+}
+
+

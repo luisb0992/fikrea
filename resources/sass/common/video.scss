@@ -1,0 +1,25 @@
+/**
+ * Validación por video
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicios Externos
+ */
+
+/**
+ * El elemento de video
+ */
+#video-screen {
+    width: 100%;
+    max-width: 640px;
+    max-height: 480px;
+    background: rgb(36, 33, 33);
+}
+
+.video-thumb {
+    width: 100%;
+    max-width: 120px;
+}
+
+video {
+    max-width: 100%;
+}

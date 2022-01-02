@@ -1,0 +1,88 @@
+/**
+ * Tablas
+ */
+table {
+
+    .square-check {
+        background-color: #abb5b5;
+        border: 2px solid #959393;
+    }
+
+    .btn {
+        &.square {
+            width: 48px;
+            height: 48px;
+            margin: 2px;
+
+            >.fa, .fas, .far {
+                position: relative;
+                top: 5px;
+                left: -1px;
+                font: {
+                    size: 150%;
+                }
+            }
+
+            >.fa-2x {
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+/**
+ * Tabla responsiva
+ */
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    .table-responsive {
+
+        >table {
+
+            thead, tfoot { 
+                display: none;
+            }
+
+            tbody {
+                th, td, tr { 
+                    display: block;
+                    text-align: left !important;
+                }
+            }
+
+            tr {
+                border-bottom: 2px solid grey; 
+            }
+
+            th, td {
+                word-break: break-word;
+                border-bottom: 1px dotted grey;
+  
+                &:before {
+                    content: attr(data-label);
+                    color: black;
+                    white-space: nowrap;
+                    font: {
+                        weight: bold;
+                    }
+                    margin-right: 1rem;
+                }
+
+                .fa-2x {
+                    font: {
+                        size: 24px;
+                    }
+                }
+            }
+
+            /**
+            * La última columna que suele llevar los botones
+            */
+            td:last-child {
+               text-align: center !important; 
+            }
+        }
+    }
+}

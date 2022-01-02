@@ -1,0 +1,76 @@
+/**
+ * config.scss
+ *
+ * Configuraciones del usuario 
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicos Externos 
+ */
+
+/**
+ * Elemento textarea
+ */
+textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    background: #f4f1de;
+    padding: 1em;
+}
+
+/**
+ * Selector
+ */
+select {
+    border-radius: 0;
+}
+
+/**
+ * La firma del usuario
+ */
+.sign-wrapper {
+    position: relative;
+
+    .btn {
+        position: absolute;
+        top: -10px;
+        left: 240px;
+        font: {
+            size: 24px;
+        }
+    }
+
+    .sign {
+        width: 100%;
+        height: 200px;
+        background: #f4f1de;
+        border: 2px dotted #9b06cd; /* morado fikrea */
+        /*
+        The first number is the x-coordinate, and the second number is the y-coordinate.
+        The example will set the hotspot to be the pixel at (4,12) from the top left (0,0)
+        */
+        cursor: url('/assets/css/workspace/cursor-sign.png') 0 28, auto;
+    }
+}
+
+/**
+ * Reproductor de audio
+ */
+.audio-controls {
+
+    audio {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/**
+ * Reproductor de video
+ */
+.video-controls {
+
+    video {
+        width: 100%;
+        max-width: 100%;
+    }
+}

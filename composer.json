@@ -1,0 +1,99 @@
+{
+    "name": "retail/fikrea",
+    "type": "project",
+    "description": "Fikrea",
+    "keywords": [
+        "fikrea",
+        "firma digital"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2.5",
+        "akaunting/language": "^1.0",
+        "barryvdh/laravel-dompdf": "^0.8.7",
+        "bensampo/laravel-enum": "^3.1",
+        "doctrine/dbal": "^2.11",
+        "dompdf/dompdf": "^0.8.6",
+        "fideloper/proxy": "^4.2",
+        "fruitcake/laravel-cors": "^1.0",
+        "fzaninotto/faker": "^1.9",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "howtomakeaturn/pdfinfo": "1.*",
+        "imangazaliev/didom": "^1.16",
+        "intervention/image": "^2.5",
+        "jurosh/pdf-merge": "^2.1",
+        "khill/lavacharts": "^3.1",
+        "laravel/framework": "^8.0",
+        "laravel/tinker": "^2.0",
+        "laravel/ui": "^3.0",
+        "laravelcollective/html": "^6.1",
+        "league/flysystem-aws-s3-v3": "^1.0.",
+        "livewire/livewire": "^1.3",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "monarobase/country-list": "^3.2",
+        "mpdf/mpdf": "^8.0",
+        "paypal/paypal-checkout-sdk": "^1.0",
+        "phpoffice/phpspreadsheet": "^1.15",
+        "phpoffice/phpword": "^0.17.0",
+        "spatie/laravel-analytics": "^3.10",
+        "stechstudio/laravel-zipstream": "^3.0",
+        "stichoza/google-translate-php": "^4.1",
+        "thiagoalessio/tesseract_ocr": "^2.11",
+        "tightenco/ziggy": "^0.9.4",
+        "victorybiz/geoip-location": "^1.1"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.5",
+        "barryvdh/laravel-ide-helper": "^2.10",
+        "facade/ignition": "^2.3.6",
+        "laravel/dusk": "^6.8",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.0",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Fikrea\\": "lib/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:meta"
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+/**
+ * Select2
+ * 
+ * Estilos para el selector Select2
+ *
+ * @link https://select2.org/appearance
+ *
+ * En Vue se integhra a través de un componente puente vue-select2
+ *
+ * @link https://github.com/godbasin/vue-select2
+ */
+
+.select2 {
+     width: 100% !important;
+}
+
+.select2-selection__rendered {
+    line-height: 36px !important;
+}
+.select2-container .select2-selection--single {
+    height: 36px !important;
+}
+.select2-selection__arrow {
+    height: 36px !important;
+}

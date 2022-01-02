@@ -1,0 +1,79 @@
+/**
+ * Menú 
+ */
+.hamburger-box {
+    height: 23px;
+    top: 9px;
+}
+
+/**
+ * Logo sobre el menú
+ */
+.logo-src {
+    margin-bottom: 5px;
+}
+
+/**
+ * Pone los bagges
+ */
+
+.scrollbar-sidebar {
+
+    .title {
+        display: inline-block;
+        max-width: 15ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .badge {
+        position: relative;
+        float: right;
+        top: 8px;
+    }
+
+    overflow-y: auto;
+}
+
+.closed-sidebar .app-sidebar .app-sidebar__inner ul li a {
+    //text-indent: -99rem;
+
+    .badge {
+        text-indent: 0;
+        left: 16px;
+    }
+}
+
+
+/**
+ * Tamaño de la foto del perfil en el menú
+ */
+.profile-icon {
+    width: 42px;
+}
+
+/*
+* Alinear span que contiene un icono de fontawesome
+* para el menu (sidebar)
+*/
+.span-icon-menu {
+    position: absolute;
+    margin-bottom: 16px;
+}
+
+/*
+* alinear icono de fontawesome dentro de la
+* division disponible en el menu (sidebar)
+*/
+.icon-fa-align-menu {
+    margin-left: -35px;
+    font-size: 22px;
+}
+
+/*
+* color del icono fontawesome dentro del menu (sidebar)
+*/
+.fa-color-menu {
+    color: #ebe9e9;
+    box-shadow: inset 0 0 0 2px;
+}

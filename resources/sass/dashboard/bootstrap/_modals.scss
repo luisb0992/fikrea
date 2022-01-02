@@ -1,0 +1,11 @@
+/**
+ * Modales
+ */
+
+/**
+ * Modales con scroll vertical
+ */
+.modal-body.scrollable {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}

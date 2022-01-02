@@ -1,0 +1,26 @@
+
+#user-menu {
+    width: 225px;
+
+    .language-flag {
+        margin: 0 10px 0 0;
+        width: 48px;
+    }
+
+    .dropdown-item {
+  
+        font: {
+            size: 14px;
+            weight: bold;
+        }
+    
+        .metismenu-icon {
+            margin-right: 15px;
+            width: 40px;
+            font: {
+                size: 48px;
+            }
+        }
+    }
+}
+

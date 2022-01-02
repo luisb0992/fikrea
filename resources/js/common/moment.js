@@ -1,0 +1,1 @@
+moment.locale('es'); // default the locale to Spanish

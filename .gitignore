@@ -1,0 +1,119 @@
+#
+# Fikrea
+#
+# https://www.fikrea.com
+#
+# @autor javieru <javi@gestoy.com>
+# @copyright 2021 Retail Servicios Externos
+#
+
+#
+# Configuración de los editores
+#
+# Omitir la configuración personalizada de los IDEs de desarrollo
+# Visual Studio Code, Sublime, Atom, PhpStorm
+#
+.vscode
+/.idea
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
+config/ide-helper.php
+
+#
+# Configuración de herramienta debugbar
+#
+config/debugbar.php
+
+#
+# node
+#
+/node_modules
+
+#
+# composer
+#
+# Las dependencias se instalan con:
+#
+# composer install
+#
+/vendor
+.composer-lock.json
+composer.lock
+
+#
+# npm
+#
+# Las dependencias se instalan con:
+#
+# npm install
+#
+
+#
+# Webpack (Laravel Mix)
+#
+# Webpack se lanza en desarrolo:
+#
+# npm run dev
+#
+# o para quedar observando los cambios:
+#
+# npm run watch
+#
+# En producción:
+#
+# npm run prod
+#
+package-lock.json
+
+#
+# Carpeta pública
+#
+public/assets
+public/mix-manifest.json
+
+#
+# Carpeta Storage
+#
+# Contiene el almacenamiento de la aplicación
+# incluyendo el requerido por Laravel para sus archivos de registro (log)
+# archivos de mantenimiento de la sessión de usuario
+# archivos de cache, incluyendo las palntillas de Blade compiladas
+# 
+/storage/*
+!/storage/tests
+
+#
+# Omitir los archivos de caché de Laravel
+#
+bootstrap/cache/packages.php
+bootstrap/cache/services.php
+
+#
+# Archivo de configuración del entorno de usuario
+#
+# @link https://laravel.com/docs/8.x/configuration
+#
+.env
+
+#
+# PHPunit
+#
+# @link https://phpunit.de/
+#
+.phpunit.result.cache
+
+#
+# Cualquier archivo de reporte
+#
+report*
+
+#
+# Los archivos de texto plano para las traducciones
+#
+resources/lang/txt
+
+#
+# Configuración de editores
+#
+/.vscode

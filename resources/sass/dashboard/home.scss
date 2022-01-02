@@ -1,0 +1,21 @@
+/**
+ * home.scss
+ *
+ * Página de Inicio del Dashboard o zona de usuario
+ * que muestra las notificaciones 
+ *
+ * @author javieru <javi@gestoy.com>
+ * @copyright 2021 Retail Servicos Externos 
+ */
+
+ /**
+  * Notificaciones
+  */
+.notifications {
+    padding-right: 0;
+    padding-left: 30px;
+
+    .widget-content {
+        word-break: break-word;
+    }
+}

@@ -1,0 +1,39 @@
+/**
+ * screen.scss Estilos para pagina de grabación de pantalla
+ *
+ * @author rosellpp <rpupopolanco@gmail.com>
+ * @copyright 2021 Retail Servicos Externos 
+ */
+
+/**
+ * El elemento de video
+ */
+#video-screen {
+    width: 100%;
+    max-width: 640px;
+    max-height: 480px;
+    background: rgb(36, 33, 33);
+    background-image: '/assets/images/workspace/anonymous-user.png';
+    border: 2px solid orangered;
+}
+
+.video-thumb {
+    width: 100%;
+    max-width: 120px;
+}
+
+.video-list-thumb {
+    width: 100%;
+    max-width: 240px;
+}
+
+video {
+    max-width: 100%;
+}
+
+#img-no-camera {
+	width: 100%;
+    max-width: 640px;
+    max-height: 480px;
+    border: 2px solid orangered;
+}
